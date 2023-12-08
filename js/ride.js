@@ -61,6 +61,9 @@ let map;
             displayUpdate(unicorn.Name + ' has arrived. Giddy up!', unicorn.Color);
             WildRydes.map.unsetLocation();
 
+            var audio= new Audio('https://wildridesbucket.s3.amazonaws.com/yaySound.mp3');
+            audio.play();
+
             $('#request').prop('disabled', 'disabled');
             $('#request').text('Set Pickup');
         });
